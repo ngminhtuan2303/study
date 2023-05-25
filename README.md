@@ -8,3 +8,7 @@
 - Chạy lệnh sau để commit các thay đổi của bạn đối với các file này: **git commit <filename_one>**
 - Và chúng ta có thể push các thay đổi của mình sau khi hoàn tất: **git push**
 - Cùng với việc thực hiện thêm bất kỳ thay đổi nào trong branch master sẽ yêu cầu các thay đổi này phải được commit lại.
+- Kéo file mới nhất về: **git pull**
+- Tạo branch mới: **git checkout -b branch**
+- Chuyển đổi branch: **git checkout branch**
+- Kéo file từ nhánh vào main: **git merge**
