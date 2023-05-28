@@ -264,9 +264,27 @@ Các protocol được sử dụng rộng rãi trong công nghệ thông tin, nh
 
 ### 14. Giao thức Hypertext Transfer Protocol over SSL/TLS (HTTPS)
 
-- HTTPS được sử dụng với HTTP để cung cấp các dịch vụ tương tự, nhưng với kết nối bảo mật được cung cấp bởi SSL hoặc TLS.
+- HTTPS được sử dụng với HTTP để cung cấp các dịch vụ tương tự, nhưng với kết nối bảo mật được cung cấp bởi SSL (Secure Sockets Layer – tầng ổ bảo mật) hoặc TLS (Transport Layer Security – bảo mật tầng truyền tải).
 
 - Cổng mặc định của HTTPS là 443.
+
+## Sự khác nhau giữa HTTP và HTTPS
+
+### 1. Chứng chỉ SSL
+
+Sự khác biệt lớn nhất giữa HTTP và HTTPS là chứng chỉ SSL. Về cơ bản, HTTPS là một giao thức HTTP với bảo mật bổ sung. Tuy nhiên, trong thời đại mà mọi thông tin đều được số hóa, thì giao thức HTTPS lại trở nên cực kỳ cần thiết cho bảo mật website. Dù bạn sử dụng máy tính cá nhân hay công cộng, các tiêu chuẩn SSL sẽ luôn đảm bảo liên lạc giữa máy khách và máy chủ được an toàn, chống bị dòm ngó.
+
+### 2. Port trên HTTP và HTTPS
+
+Port là cổng xác định thông tin trên máy khách, sau đó phân loại để gửi đến máy chủ. Mỗi Port mang một số hiệu riêng với chức năng riêng biệt. Giao thức HTTP sử dụng Port 80, trong khi đó HTTPS sử dụng Port 443 – đây chính là cổng hỗ trợ mã hóa kết nối từ máy tính client đến server, nhằm bảo vệ gói dữ liệu đang được truyền đi.
+
+### 3. Mức độ bảo mật của HTTP và HTTPS
+
+- Khi máy khách truy cập một website, giao thức HTTPS sẽ hỗ trợ xác thực tính đích danh của website đó thông qua việc kiểm tra xác thực bảo mật (Security Certificate).
+
+- Các xác thực bảo mật này được cung cấp và xác minh bởi Certificate Authority (CA) – các tổ chức phát hành các chứng thực các loại chứng thư số cho người dùng, doanh nghiệp, máy chủ, mã nguồn, phần mềm. Các tổ chức này đóng vai trò là bên thứ ba, được cả hai bên tin tưởng để hỗ trợ quá trình trao đổi thông tin an toàn.
+
+- Đối với HTTP, vì dữ liệu không được xác thực bảo mật nên sẽ không có gì đảm bảo được phiên kết nối của bạn có đang bị “nghe lén” hay không, hoặc bạn đang cung cấp thông tin cho website thật hay một website giả mạo.
 
 ## Giao tiếp giữa BE-FE là giao thức nào? (HTTP?)
 
